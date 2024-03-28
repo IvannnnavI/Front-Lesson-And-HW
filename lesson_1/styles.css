@@ -1,0 +1,11 @@
+h1{
+    color: hwb(54 1% 1%);
+    border: 10px solid blue;
+    border-radius: 10px;
+    text-align: center;
+}
+.siamskaya {
+    text-decoration: line-through;
+    font-size: 40px;
+
+}

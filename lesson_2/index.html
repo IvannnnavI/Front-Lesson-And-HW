@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .firstWay {
+            background-color: rgb(150, 217, 217);
+        }
+
+        h1 {
+            color: green;
+        }
+    </style>
+    <title>CSS intro</title>
+</head>
+
+<body>
+
+    <header>
+        <h1 id="heading" style="color: chocolate;">Hello CSS</h1>
+        <p>First steps in css</p>
+    </header>
+    <main>
+        <p>CSS можно подключить тремя разными способами:</p>
+        <ul>
+            <li class="firstWay">Первый - внутренний. Мы указываем код в теге style</li>
+            <li>Второй способ - инлайновый. Когда мы прописываем стили внутри открывающего тега</li>
+            <li>Третий (приоритетный) - создать файл со стилями CSS</li>
+        </ul>
+        <p>инлайновый CSS имеют найвысший приоритет, но старайтесь не использовать их</p>
+        <p>обращение по классам приоритетнее обращения по тегам </p>
+        <section>
+            <h2 class="sectionFirstsmallText">Section 1</h2>
+        </section>
+        <section>
+            <h2 class="sectionSecondsmallText">Section 2</h2>
+        </section>
+    </main>
+
+    <footer>
+        <p>Это подвал нашего сайта</p>
+        <a href="lesson_2/page1/page1.html">на другую страницу</a>
+    </footer>
+
+</body>
+
+</html>
