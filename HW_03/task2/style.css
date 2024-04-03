@@ -1,0 +1,27 @@
+#login, #registration{
+    text-decoration: none;
+    border: none;
+    display: inline-block;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 20px;
+    margin-left: 20px;
+    padding: 25px 20px;
+    border-radius: 8px;
+    transition: backround-color 0.3s,color 0.3s;
+}
+#login{
+    background-color: #778D45;
+    color: white;
+    padding: 10px 40 px;
+
+    margin-right: 10px;
+}
+#registration{
+    background-color: #AEC09A;
+    color: white;
+}
+#login:hover, #registration:hover{
+    color: black;
+    background-color: #cce816;
+}

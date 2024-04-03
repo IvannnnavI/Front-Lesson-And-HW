@@ -2,6 +2,12 @@ img {
     height: 300px;
   
 }
+h2 {
+    color: #9b0f0f;
+    font-size: 40px;
+    text-decoration: underline;
+
+}
 body {
     font-family: 'Helvetica Neue', Arial, sans-serif;
     background-color: #cdedd5;

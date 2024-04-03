@@ -1,0 +1,33 @@
+*{
+    box-sizing: border-box;
+}
+h1{
+    font-size: 36px;
+    font-weight:bold;
+    margin-bottom: 20px;
+}
+body{
+    font-size: 18px;
+    display: inline-block;
+    /* width: fit-content; */
+    width: 600px;
+    padding: 20px;
+    margin: 0 auto;
+    background-color:#ffffff ;
+}
+p{
+    background-color: #f5f5dc;
+    border: 4px solid red;
+    margin-bottom: 20px;
+}
+span{
+    border:4px solid blue;
+
+}
+img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 5px;
+    
+}
