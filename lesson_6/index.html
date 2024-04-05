@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Grig layout</title>
+</head>
+<body>
+    <h1>Grid layout</h1>
+    <ul>
+        <li>grid-template-colums; шаблон схема построения колонок в Grid</li>
+        <li>Свойство gap отвечает за промежуток между элементами</li>
+        <li>Если указываем ширину колонки в  fr то браузер сложит значения всех колонок и будет высчитывать количество пикселей относительно этой общей суммы</li>
+        <li>Можем указывать повторяющиеся значения через функцию repeat(количество повторений , размер ячейки),
+        например repeat (4,1fr).
+        </li>
+    </ul>
+    <div class="containerGrid">
+        <p>-1</p>
+        <span>0</span>
+        <div class="gridItem">1</div>
+        <div class="gridItem">2</div>
+        <div class="gridItem">3</div>
+        <div class="gridItem">4</div>
+        <div class="gridItem">5</div>
+        <div class="gridItem">6</div>
+        <div class="gridItem">7</div>
+        <div class="gridItem">8</div>
+        <div class="gridItem">9</div>
+        <div class="gridItem">10</div>
+        <div class="gridItem">11</div>
+    </div>
+    <ul><li>Строкам можно указывать значения вручную grid-template-rows:50px 100px</li>
+        <li>Через grid-auto-rows: 80px; можно указать значение для всех строк</li></ul>
+        <div class="containerGridMinMax">
+            <div class="gridItemAdaptiv">1</div>
+            <div class="gridItemAdaptiv">2</div>
+            <div class="gridItemAdaptiv">3</div>
+            <div class="gridItemAdaptiv">4</div>
+            <div class="gridItemAdaptiv">5</div>
+            <div class="gridItemAdaptiv">6</div>
+            <div class="gridItemAdaptiv">7</div>
+        </div>
+        <ul>
+            <li>Если мы хотим сделать сложную сетку с объединением ячеек, то можно воспользоваться grid-template-areas</li>
+        </ul>
+        <div class="contaiberGridAreas">
+            <div class="top"></div>
+            <h3>TOP</h3>
+        </div>
+        <div class="bottom">
+          <h3>Bottom</h3>
+        </div>
+        <div class="content">
+          <h3>content</h3>
+        </div>
+        <!-- <div class="imgWrapper">
+          <img
+            src="https://images-assets.nasa.gov/image/GSFC_20171208_Archive_e001016/GSFC_20171208_Archive_e001016~large.jpg?w=1920&h=1080&fit=clip&crop=faces%2Cfocalpoint"
+            alt=""
+          />
+        </div> -->
+      </div>
+    </body>
+  </html>
