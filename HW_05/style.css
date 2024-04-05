@@ -1,0 +1,44 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    flex-wrap: wrap;
+    background-color: rgb(35, 2, 28);
+}
+
+.card {
+    width: fit-content;
+    height: fit-content;
+    position: relative;
+    margin: 20px;
+    background-color: antiquewhite;
+    box-shadow: 0 4 px 8 px rgba (0,0,0,0.1);
+    border-radius: 10px;
+}
+
+.card img {
+    width: 450px;
+    height: 600px;
+    width: auto;
+    height: auto;
+    border-radius: 10 px 10 px 0 0;
+}
+
+.rating {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: rgb(59,179,58); 
+    color: white;
+}
+
+.ticket-info {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background-color: rgb(255,86,0); 
+    padding: 5px;
+    color: white;
+}
