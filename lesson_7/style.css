@@ -1,0 +1,175 @@
+/* Встановлюємо для всіх елементів модель розміщення box-sizing як border-box */
+* {
+  box-sizing: border-box;
+
+/* Задаємо шрифт для всіх елементів */
+  font-family: "Roboto", sans-serif;
+
+/* Задаємо товщину шрифту */
+  font-weight: 300;
+
+/* Задаємо стиль шрифту */
+  font-style: italic;
+}
+
+/* Встановлюємо відступи для body */
+body {
+  margin: 0;
+
+/* Визначаємо тип відображення як flex */
+  display: flex;
+
+/* Вказуємо напрямок розміщення елементів у flex контейнері */
+  flex-direction: column;
+
+/* Встановлюємо мінімальну висоту */
+  min-height: 100vh;
+}
+
+/* Визначаємо гнучке розтягнення для основного контенту */
+.main {
+  flex: 1;
+}
+
+/* Визначаємо стилі для шапки */
+.header {
+/* Встановлюємо відображення як flex */
+  display: flex;
+
+/* Вирівнюємо елементи всередині по горизонталі */
+  justify-content: space-between;
+
+/* Вирівнюємо елементи по вертикалі */
+  align-items: center;
+
+/* Встановлюємо відступи */
+  padding: 20px 50px;
+
+/* Вказуємо позиціонування як sticky */
+  position: sticky;
+
+/* Встановлюємо позиціонування зверху */
+  top: 0px;
+
+/* Встановлюємо ширину */
+  width: 100%;
+
+/* Встановлюємо мінімальну висоту */
+  min-height: 80px;
+
+/* Задаємо колір фону */
+  background-color: rgb(240, 73, 12);
+}
+
+/* Позиціонуємо логотип */
+.logo {
+  position: relative;
+}
+
+/* Позиціонуємо елемент "хмаринка" відносно логотипу */
+.cloud {
+  position: absolute;
+  bottom: 7px;
+  right: -8px;
+}
+
+/* Стилізація футера */
+.footer {
+/* Встановлюємо відображення як flex */
+  display: flex;
+
+/* Вирівнювання елементів по центру */
+  justify-content: center;
+
+/* Встановлюємо шрифт */
+  font-family: "Bungee Spice", sans-serif;
+
+/* Встановлюємо ширину */
+  width: 100%;
+
+/* Встановлюємо відступи */
+  padding: 10px 50px;
+
+/* Встановлюємо розмір шрифту */
+  font-size: 30px;
+
+/* Встановлюємо мінімальну висоту */
+  min-height: 60px;
+
+/* Задаємо колір фону */
+  background-color: lightgray;
+}
+
+/* Встановлюємо відображення для навігації як flex */
+.nav {
+  display: flex;
+}
+
+/* Стилізація посилань у шапці */
+.header__link {
+/* Відміняємо підкреслення */
+  text-decoration: none;
+
+/* Встановлюємо колір тексту */
+  color: black;
+
+/* Встановлюємо лівий відступ */
+  margin-left: 8px;
+
+/* Встановлюємо перехід для всіх властивостей */
+  transition: all 2s
+
+  }
+/* Визначаємо стилі для приховування елементів */
+.header__link--display {
+  display: none;
+}
+
+/* Спеціальні стилі для першого посилання */
+.header__link:first-child {
+  margin: 0;
+}
+
+/* Стилі для посилання при наведенні */
+.header__link:hover {
+/* Зміна кольору тексту */
+  color: white;
+
+/* Додавання підкреслення */
+  text-decoration: underline;
+}
+
+/* Медіа-запити для адаптивності */
+@media (max-width: 768px) {
+  .header {
+/* Зміна кольору фону для шапки */
+     background-color: rgb(168, 143, 188);
+  }
+
+  .footer {
+/* Зміна вирівнювання для футера */
+     justify-content: end;
+  }
+}
+
+@media (max-width: 390px) {
+  .header {
+/* Зміна кольору фону для шапки на менших екранах */
+     background-color: darkseagreen;
+  }
+
+  .header__link {
+/* Приховування посилань на менших екранах */
+     display: none;
+  }
+
+  .header__link--display {
+/* Відображення посилань як inline елементів */
+     display: inline;
+  }
+
+  .footer {
+/* Зміна вирівнювання для футера на менших екранах */
+     justify-content: start;
+  }
+}

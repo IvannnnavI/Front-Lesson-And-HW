@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-font-smoothing: antialiased;
+    font-family: Arial, sans-serif;
+    -webkit-text-size-adjust: 100%;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: var(--color-white);
+    color: var(--color-black);
+    min-height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+header .logo {
+    font-weight: bold;
+    font-size: 24px; /* Укажите нужный размер шрифта */
+}
+
+header nav {
+    display: flex;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px; /* Отступ между элементами навигации */
+}
+
+header nav ul li {
+    /* Стили для элементов списка, если нужно */
+}
+
+@media only screen and (max-width: var(--breakpoint-desktop)) {
+    header nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
