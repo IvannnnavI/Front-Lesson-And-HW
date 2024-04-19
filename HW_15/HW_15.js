@@ -8,6 +8,13 @@ const cars = [
 
 /*Задание 1
 Создайте новый массив, содержащий только электрические машины (свойство isElectric равно true) и включающий только их модели и цвета. Объедините модели и цвета каждой машины в одну строку, разделенную запятой и пробелом. */
+//? исправлено
+const electricCarsInfo = cars.filter(car => car.isElectric)
+                             .map(car => `${car.model}, ${car.color}`)
+                             .join('; ');
+console.log(electricCarsInfo);  
+
+
 //* решение 1
 const onlyElectricCars = cars.filter(car => car.isElectric).map(car => `${car.model}, ${car.color}`);
 console.log(onlyElectricCars)
@@ -33,6 +40,14 @@ cars.sort((a, b) => b.year - a.year).forEach(car => {
 });
 console.log(sortYearCars2)
 
+//? исправлено
+const sortedCarsInfo = cars.sort((a, b) => b.year - a.year)
+                           .map(car => `${car.brand}-${car.model}`)
+                           .reverse()
+                           .join(', ');
+console.log(sortedCarsInfo);  
+
+
 /**Задание 3
 Напишите функцию, она будет принимать массив строк, приводить каждую строку к нижнему регистру, сортировать, а затем переворачивать каждое слово в строке задом наперед, и наконец делать первую букву в строке заглавной.
 для того, чтобы сделать первую букву заглавной используйте charAt() */
@@ -57,11 +72,12 @@ function processNumbers(arr) {
     const evenNumbers = arr.filter(num => num % 2 === 0);
     const sortEvenNumbers = evenNumbers.sort((a, b) => b - a);
     const sum = sortEvenNumbers.reduce((acc, num) => acc + num, 0);
-    return { sortEvenNumbers, sum };
+    return `Numbers: ${sortedEvenNumbers.join(', ')}; Sum: ${sum}`;
   }
   const carYearNum = cars.map(car=>car.year);
   console.log(carYearNum)
   const changNum = processNumbers(carYearNum);
   console.log(changNum)
+
 
   
