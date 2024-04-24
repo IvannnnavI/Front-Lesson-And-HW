@@ -1,0 +1,32 @@
+li {
+    cursor: pointer;
+}
+li:hover {
+    color: #108b19;
+}
+
+li.completed {
+    text-decoration: line-through red;
+    
+}
+
+.btn-container {
+    margin-top: 10px;
+}
+
+.content {
+    display: flex;
+}
+
+.btn-clear {
+    padding: 5px 10px;
+    display: flex;
+}
+
+#todo-form , h1 {
+    text-align: center;
+    margin-top: 10px;
+}
+h1 {
+    color: blue;
+}
