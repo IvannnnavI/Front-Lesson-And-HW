@@ -9,8 +9,6 @@ function getStudent() {
         }, 4000);
     });
 }
-
-// Вызываем функцию и используем then для вывода полной информации о студенте
 getStudent().then(student => {
     console.log(`Студент с именем ${student.name} и возрастом ${student.age}`);
 });
