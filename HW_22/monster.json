@@ -1,0 +1,38 @@
+[
+    {
+        "name": "Dracula",
+        "origin": "Transylvania",
+        "type": "Vampire",
+        "famous_work": "Dracula"
+    },
+    {
+        "name": "Frankenstein's Monster",
+        "origin": "Germany",
+        "type": "Created Monster",
+        "famous_work": "Frankenstein"
+    },
+    {
+        "name": "Werewolf",
+        "origin": "Europe",
+        "type": "Lycanthrope",
+        "famous_work": "Various"
+    },
+    {
+        "name": "Mummy",
+        "origin": "Egypt",
+        "type": "Undead",
+        "famous_work": "The Mummy"
+    },
+    {
+        "name": "Goblin",
+        "origin": "European Folklore",
+        "type": "Creature",
+        "famous_work": "Various"
+    },
+    {
+        "name": "Zombie",
+        "origin": "Haitian Folklore",
+        "type": "Undead",
+        "famous_work": "Night of the Living Dead"
+    }
+]

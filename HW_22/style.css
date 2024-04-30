@@ -1,0 +1,67 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Gothic A1', sans-serif;
+}
+
+body {
+    background-color: #121212;
+    color: #E0E0E0;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #333;
+    padding: 20px 0;
+    text-align: center;
+}
+
+h1 {
+    color: #F44336;
+    font-size: 2.5em;
+}
+
+main {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.monsterCard {
+    background-color: #424242;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.monsterCard:hover {
+    transform: scale(1.05);
+}
+
+.monsterCard__heading {
+    font-size: 1.5em;
+    color: #C62828;
+    margin-bottom: 10px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #333;
+    color: #BDBDBD;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.8em;
+}
